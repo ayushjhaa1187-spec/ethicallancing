@@ -10,7 +10,9 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">Ethical<span>Freelance</span></div>
+            <div class="logo">
+                Ethical<span>Freelance</span>
+            </div>
             <div class="nav-links">
                 <a href="#" onclick="showSection('home-section')">Home</a>
                 <a href="#" onclick="showSection('jobs-section')">Find Jobs</a>
@@ -32,10 +34,9 @@
         <div class="hero">
             <div class="container">
                 <h1>Find Your Next Opportunity</h1>
-                <p><p>Access top 3% of freelance talent worldwide. Get projects done faster with vetted professionals.</p>
+                <p>Access top 3% of freelance talent worldwide. Get projects done faster with vetted professionals.</p>
                 <div class="cta-buttons">
                     <button class="btn btn-primary" onclick="showSection('jobs-section')">Browse Jobs</button>
-                    <h1>Hire Expert Freelancers. Build Amazing Projects.</h1>
                 </div>
             </div>
         </div>
@@ -61,7 +62,7 @@
                 </select>
                 <button class="btn btn-primary" onclick="openModal('postJobModal')">Post Job</button>
             </div>
-            <div id="jobsGrid" class="jobs-grid"></div>
+            <div id="jobsList" class="jobs-list"></div>
         </div>
     </section>
 
@@ -69,15 +70,14 @@
     <section id="about-section" class="section">
         <div class="container">
             <h2>About EthicalFreelance</h2>
-            <p>We're building the future of freelancing with transparency, fairness, and opportunity for all.</p>
-            <div id="statsGrid" class="stats-grid"></div>
+            <p>We connect talented freelancers with businesses looking for quality work. Our platform ensures fair compensation and ethical practices.</p>
         </div>
     </section>
 
     <!-- Login Modal -->
     <div id="loginModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <span class="close" onclick="closeModal('loginModal')">×</span>
             <h2>Login</h2>
             <form onsubmit="handleLogin(event)">
                 <div class="form-group">
@@ -97,7 +97,7 @@
     <!-- Signup Modal -->
     <div id="signupModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <span class="close" onclick="closeModal('signupModal')">×</span>
             <h2>Sign Up</h2>
             <form onsubmit="handleSignup(event)">
                 <div class="form-group">
@@ -112,13 +112,6 @@
                     <label>Password</label>
                     <input type="password" id="signupPassword" required>
                 </div>
-                <div class="form-group">
-                    <label>Account Type</label>
-                    <select id="accountType" required>
-                        <option value="freelancer">Freelancer</option>
-                        <option value="client">Client</option>
-                    </select>
-                </div>
                 <div class="error-message" id="signupError"></div>
                 <button type="submit" class="btn btn-primary">Sign Up</button>
             </form>
@@ -128,7 +121,7 @@
     <!-- Post Job Modal -->
     <div id="postJobModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('postJobModal')">&times;</span>
+            <span class="close" onclick="closeModal('postJobModal')">×</span>
             <h2>Post a Job</h2>
             <form onsubmit="handlePostJob(event)">
                 <div class="form-group">
@@ -174,7 +167,7 @@
     <!-- Toast Notification -->
     <div id="toast" class="toast"></div>
 
-    <!-- Scripts must be loaded in order: config -> db -> api -> app -->
+    <!-- Scripts -->
     <script src="js/config.js"></script>
     <script src="js/db.js"></script>
     <script src="js/api.js"></script>
