@@ -355,4 +355,52 @@
         </div>
     </footer>
 </body>
+    
+    <script>
+        // Add click handlers to buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all buttons
+            const buttons = document.querySelectorAll('.btn');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const buttonText = this.textContent.trim();
+                    
+                    switch(buttonText) {
+                        case 'Log In':
+                            alert('🔑 Login Feature Coming Soon!\n\nWe are building a secure login system for freelancers and clients.');
+                            break;
+                        case 'Sign Up':
+                            alert('🎉 Sign Up Feature Coming Soon!\n\nCreate your free account to get started as a freelancer or client.');
+                            break;
+                        case 'Browse Projects':
+                            alert('💼 Browse Projects Feature Coming Soon!\n\nDiscover thousands of projects matching your skills and interests.');
+                            break;
+                        case 'Post a Project':
+                            alert('➕ Post Project Feature Coming Soon!\n\nConnect with talented freelancers for your next project.');
+                            break;
+                        case 'Create Free Account':
+                            alert('✨ Registration Feature Coming Soon!\n\nJoin thousands of freelancers and clients on EthicalFreelance.');
+                            break;
+                        default:
+                            alert('🚀 Feature Coming Soon!\n\n' + buttonText + ' functionality is under development.');
+                    }
+                });
+            });
+            
+            // Add click handlers to navigation links
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const linkText = this.textContent.trim();
+                    alert('🔗 ' + linkText + ' Page Coming Soon!\n\nThis feature is currently under development.');
+                });
+            });
+            
+            // Add hover effect message
+            console.log('%c🚀 Welcome to EthicalFreelance!', 'color: #667eea; font-size: 20px; font-weight: bold');
+            console.log('%cButtons are now interactive! Click any button to see what\'s coming.', 'color: #333; font-size: 14px');
+        });
+    </script>
 </html>
