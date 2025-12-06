@@ -40,6 +40,222 @@
                 </div>
             </div>
         </div>
+
+                <!-- Profile Section -->
+        <div class="container" style="margin-top: 50px;">
+            <h2>Your Professional Profile</h2>
+            <div class="profile-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 40px;">
+                <div style="display: flex; gap: 30px; align-items: start;">
+                    <div class="profile-photo" style="width: 150px; height: 150px; background: #6c5ce7; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px; font-weight: bold;">AK</div>
+                    <div style="flex: 1;">
+                        <h3>Alex Kumar</h3>
+                        <p><strong>Skills:</strong> Full Stack Developer | React, Node.js, Python, AWS | 5+ years experience in building scalable web applications and microservices architecture</p>
+                        <p><strong>Education:</strong> B.Tech in Computer Science, IIT Delhi (2018)</p>
+                        <p><strong>Experience:</strong> Senior Software Engineer at Tech Corp | Previously at Startup Inc</p>
+                        <div class="ai-suggestions" style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-left: 4px solid #6c5ce7; border-radius: 5px;">
+                            <h4 style="margin-top: 0;">🤖 AI Suggestions for You</h4>
+                            <ul style="margin: 10px 0;">
+                                <li><strong>Project Takeover:</strong> E-commerce Platform Redesign - $5,000 (Matches your React & Node.js skills)</li>
+                                <li><strong>Skills Learning:</strong> Consider learning Kubernetes - High demand in your network</li>
+                                <li><strong>Recommended:</strong> Complete AWS Solutions Architect certification for 40% higher rates</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Skills Section -->
+        <div class="container" style="margin-bottom: 50px;">
+            <h2>Explore Skills in CSE & IT Domain</h2>
+            <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
+                <div class="skill-badge" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; cursor: pointer; transition: transform 0.3s;">Web Development</div>
+                <div class="skill-badge" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; cursor: pointer; transition: transform 0.3s;">Mobile Development</div>
+                <div class="skill-badge" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; cursor: pointer; transition: transform 0.3s;">Data Science & AI/ML</div>
+                <div class="skill-badge" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; cursor: pointer; transition: transform 0.3s;">Cloud Computing</div>
+                <div class="skill-badge" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; cursor: pointer; transition: transform 0.3s;">Cybersecurity</div>
+                <div class="skill-badge" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; cursor: pointer; transition: transform 0.3s;">Database Management</div>
+                <div class="skill-badge" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333; padding: 20px; border-radius: 10px; text-align: center; cursor: pointer; transition: transform 0.3s;">DevOps & CI/CD</div>
+                <div class="skill-badge" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); color: #333; padding: 20px; border-radius: 10px; text-align: center; cursor: pointer; transition: transform 0.3s;">UI/UX Design</div>
+                <div class="skill-badge" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #333; padding: 20px; border-radius: 10px; text-align: center; cursor: pointer; transition: transform 0.3s;">Blockchain</div>
+                <div class="skill-badge" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; cursor: pointer; transition: transform 0.3s;">IoT Development</div>
+            </div>
+        </div>
+
+                <!-- Opportunities Section -->
+        <div class="container" style="margin-bottom: 50px;">
+            <h2>Explore Opportunities</h2>
+            <div class="tabs" style="margin-top: 30px;">
+                <div class="tab-buttons" style="display: flex; gap: 10px; border-bottom: 2px solid #e1e8ed; margin-bottom: 30px;">
+                    <button onclick="showTab('freelancer')" id="freelancerTab" class="tab-btn active" style="padding: 15px 30px; background: #6c5ce7; color: white; border: none; border-radius: 5px 5px 0 0; cursor: pointer; font-weight: 600;">For Freelancers</button>
+                    <button onclick="showTab('professional')" id="professionalTab" class="tab-btn" style="padding: 15px 30px; background: #dfe6e9; color: #2d3436; border: none; border-radius: 5px 5px 0 0; cursor: pointer; font-weight: 600;">For Professionals/Clients</button>
+                </div>
+                <div id="freelancerContent" class="tab-content" style="display: block;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #0984e3;">
+                            <h3 style="margin-top: 0; color: #0984e3;">💼 Projects</h3>
+                            <p>Browse 500+ active projects matching your skills</p>
+                        </div>
+                        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #00b894;">
+                            <h3 style="margin-top: 0; color: #00b894;">🔄 Job Exchange</h3>
+                            <p>Find contract-to-hire opportunities</p>
+                        </div>
+                        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #fdcb6e;">
+                            <h3 style="margin-top: 0; color: #e17055;">⏰ Part-Time Jobs</h3>
+                            <p>Flexible work schedules for side projects</p>
+                        </div>
+                        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #e84393;">
+                            <h3 style="margin-top: 0; color: #e84393;">🚕 Gig System</h3>
+                            <p>Quick tasks like Ola/Uber model</p>
+                        </div>
+                        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #6c5ce7;">
+                            <h3 style="margin-top: 0; color: #6c5ce7;">🤝 Expand Connection</h3>
+                            <p>Network with 10K+ professionals</p>
+                        </div>
+                        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #00cec9;">
+                            <h3 style="margin-top: 0; color: #00cec9;">📝 Formal Posts</h3>
+                            <p>Share achievements & build portfolio</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="professionalContent" class="tab-content" style="display: none;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #d63031;">
+                            <h3 style="margin-top: 0; color: #d63031;">📊 Market Insights</h3>
+                            <p>Real-time freelance market analytics</p>
+                        </div>
+                        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #00b894;">
+                            <h3 style="margin-top: 0; color: #00b894;">🤖 AI Rate Suggestions</h3>
+                            <p>Fair pricing based on market data</p>
+                        </div>
+                        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #fdcb6e;">
+                            <h3 style="margin-top: 0; color: #e17055;">⭐ Top Performers</h3>
+                            <p>Access vetted top 5% freelancers</p>
+                        </div>
+                        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #0984e3;">
+                            <h3 style="margin-top: 0; color: #0984e3;">💬 Engaging Conversations</h3>
+                            <p>Connect with other professionals</p>
+                        </div>
+                        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #6c5ce7;">
+                            <h3 style="margin-top: 0; color: #6c5ce7;">📝 Formal Posts</h3>
+                            <p>Share insights & hire smartly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Ads Section -->
+        <div class="container" style="margin-bottom: 50px;">
+            <div class="ads-banner" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 15px; text-align: center;">
+                <h3 style="margin: 0 0 15px 0; font-size: 28px;">Level Up Your Career with Clauding Premium</h3>
+                <p style="margin: 0 0 20px 0; font-size: 18px;">Get featured listings, priority support, and AI-powered job matching</p>
+                <button style="padding: 15px 40px; background: white; color: #667eea; border: none; border-radius: 25px; font-weight: bold; font-size: 16px; cursor: pointer;">Upgrade Now - 30% Off</button>
+            </div>
+        </div>
+
+        <!-- AI Generated Suggestions -->
+        <div class="container" style="margin-bottom: 50px;">
+            <h2>🤖 AI-Powered Recommendations</h2>
+            <div style="background: #f8f9fa; padding: 30px; border-radius: 10px; margin-top: 30px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #6c5ce7;">
+                        <h4 style="margin-top: 0; color: #6c5ce7;">For Freelancers</h4>
+                        <ul style="margin: 0; padding-left: 20px;">
+                            <li>3 new projects match your React skills</li>
+                            <li>Your profile views increased 45%</li>
+                            <li>Recommend updating portfolio</li>
+                        </ul>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #00b894;">
+                        <h4 style="margin-top: 0; color: #00b894;">For Clients</h4>
+                        <ul style="margin: 0; padding-left: 20px;">
+                            <li>5 top-rated developers available</li>
+                            <li>Average project cost: $3,500</li>
+                            <li>Best time to post: Today 2-5 PM</li>
+                        </ul>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #e17055;">
+                        <h4 style="margin-top: 0; color: #e17055;">Trending Skills</h4>
+                        <ul style="margin: 0; padding-left: 20px;">
+                            <li>AI/ML Engineers +120% demand</li>
+                            <li>Flutter Developers +85%</li>
+                            <li>Cloud Architects +95%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Why Us Section (Updated) -->
+        <div class="container" style="margin-bottom: 50px;">
+            <h2>Why Choose Clauding?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 30px;">
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #d63031;">❌ Problems with Other Platforms</h3>
+                    <p>We solve what others can't: fake profiles, delayed payments, poor matching, and lack of transparency</p>
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #00b894;">⏱️ Time Efficient</h3>
+                    <p>AI-powered matching reduces hiring time by 70%. Find the right talent in hours, not weeks</p>
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #6c5ce7;">🤝 Professional Engagement</h3>
+                    <p>Build meaningful connections with verified professionals. Quality over quantity</p>
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #0984e3;">🚀 Edge Provider</h3>
+                    <p>Cutting-edge tools for freelancers: AI suggestions, skill assessments, market insights</p>
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #fdcb6e;">💻 Tech-Enabled Platform</h3>
+                    <p>Built by engineers for engineers. Modern, fast, and secure infrastructure</p>
+                </div>
+                <div style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #e17055;">🌍 Working Ecosystem</h3>
+                    <p>Complete freelance lifecycle: Discovery → Hiring → Collaboration → Payment → Review</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="container" style="margin-bottom: 50px;">
+            <h2>Frequently Asked Questions</h2>
+            <div style="max-width: 800px; margin: 30px auto;">
+                <details style="background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <summary style="font-weight: 600; cursor: pointer; color: #2d3436;">How does Clauding ensure quality freelancers?</summary>
+                    <p style="margin-top: 15px; color: #636e72;">We use a multi-step verification process including skill tests, portfolio review, and client feedback. Only top 15% applicants are approved.</p>
+                </details>
+                <details style="background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <summary style="font-weight: 600; cursor: pointer; color: #2d3436;">What are the fees for using Clauding?</summary>
+                    <p style="margin-top: 15px; color: #636e72;">Freelancers pay 10% service fee. Clients pay 5% processing fee. No hidden charges. First project free for new users.</p>
+                </details>
+                <details style="background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <summary style="font-weight: 600; cursor: pointer; color: #2d3436;">How do I get started as a freelancer?</summary>
+                    <p style="margin-top: 15px; color: #636e72;">Sign up, complete your profile, take skill assessments, and start bidding on projects. Our AI will recommend relevant opportunities.</p>
+                </details>
+                <details style="background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <summary style="font-weight: 600; cursor: pointer; color: #2d3436;">Is payment secure on Clauding?</summary>
+                    <p style="margin-top: 15px; color: #636e72;">Yes! We use escrow system. Clients deposit funds before work starts. Freelancers get paid upon milestone completion.</p>
+                </details>
+                <details style="background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <summary style="font-weight: 600; cursor: pointer; color: #2d3436;">Can I hire for long-term contracts?</summary>
+                    <p style="margin-top: 15px; color: #636e72;">Absolutely! Clauding supports hourly, fixed-price, and retainer-based contracts. Perfect for ongoing collaborations.</p>
+                </details>
+                <details style="background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <summary style="font-weight: 600; cursor: pointer; color: #2d3436;">What makes Clauding different from Upwork or Fiverr?</summary>
+                    <p style="margin-top: 15px; color: #636e72;">AI-powered matching, lower fees, faster hiring, focus on tech/IT domain, and direct connection building without bidding wars.</p>
+                </details>
+                <details style="background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <summary style="font-weight: 600; cursor: pointer; color: #2d3436;">Do you offer customer support?</summary>
+                    <p style="margin-top: 15px; color: #636e72;">24/7 support via chat, email, and phone. Premium users get dedicated account managers.</p>
+                </details>
+                <details style="background: white; padding: 20px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <summary style="font-weight: 600; cursor: pointer; color: #2d3436;">Can I work with international clients/freelancers?</summary>
+                    <p style="margin-top: 15px; color: #636e72;">Yes! Clauding is global. We support 150+ countries with multi-currency payments and timezone-friendly scheduling.</p>
+                </details>
+            </div>
+        </div>
         <div class="container">
             <h2>Why Choose Clauding?</h2>
             <div id="featuresGrid" class="features-grid"></div>
@@ -172,5 +388,16 @@
     <script src="js/db.js"></script>
     <script src="js/api.js"></script>
     <script src="js/app.js"></script>
+        <script>
+            function showTab(tabName) {
+                document.getElementById('freelancerContent').style.display = tabName === 'freelancer' ? 'block' : 'none';
+                document.getElementById('professionalContent').style.display = tabName === 'professional' ? 'block' : 'none';
+                document.getElementById('freelancerTab').style.background = tabName === 'freelancer' ? '#6c5ce7' : '#dfe6e9';
+                document.getElementById('freelancerTab').style.color = tabName === 'freelancer' ? 'white' : '#2d3436';
+                document.getElementById('professionalTab').style.background = tabName === 'professional' ? '#6c5ce7' : '#dfe6e9';
+                document.getElementById('professionalTab').style.color = tabName === 'professional' ? 'white' : '#2d3436';
+            }
+        </script>
+
 </body>
 </html>
