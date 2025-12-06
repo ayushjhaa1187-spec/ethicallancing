@@ -74,20 +74,21 @@ const DB = {
     
     // Platform features
     features: [
-        { icon: '🛡️', title: 'Verified Clients', desc: 'All clients are verified for your safety' },
-        { icon: '💰', title: 'Secure Payments', desc: 'Payment protection for every project' },
-        { icon: '🌍', title: 'Global Opportunities', desc: 'Work with clients worldwide' },
-        { icon: '📊', title: 'Track Progress', desc: 'Monitor your projects and earnings' },
-        { icon: '💬', title: '24/7 Support', desc: 'Get help whenever you need it' },
-        { icon: '⭐', title: 'Build Reputation', desc: 'Grow your profile with reviews' }
+        { icon: '💼', title: 'Enterprise Clients', desc: 'Connect with Fortune 500 companies and startups' },
+        { icon: '⚡', title: 'Instant Matching', desc: 'AI-powered job recommendations based on your skills' },
+        { icon: '🔒', title: 'Escrow Protection', desc: 'Milestone-based payments held securely until completion' },
+        { icon: '🎯', title: 'Quality Projects', desc: 'Vetted opportunities with competitive rates' },
+        { icon: '📈', title: 'Career Growth', desc: 'Build your portfolio with high-impact projects' },
+        { icon: '🌟', title: 'Top 3% Talent', desc: 'Join an elite network of verified professionals' }
     ],
     
     // Platform stats
     stats: [
-        { number: '10,000+', label: 'Active Freelancers' },
-        { number: '5,000+', label: 'Projects Completed' },
-        { number: '$2M+', label: 'Paid to Freelancers' },
-        { number: '98%', label: 'Satisfaction Rate' }
+    stats: [
+        { number: '50K+', label: 'Projects Completed' },
+        { number: '$25M+', label: 'Earned by Freelancers' },
+        { number: '15K+', label: 'Active Freelancers' },
+        { number: '95%', label: 'Client Satisfaction' }
     ],
     
     // Generic CRUD operations
