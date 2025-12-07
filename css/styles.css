@@ -562,3 +562,382 @@ nav {
         align-items: flex-start;
     }
 }
+
+
+/* ===== ENHANCED PROFILE SECTION STYLES ===== */
+
+/* Profile Section Container */
+#profile-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecef 100%);
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Profile Header Styles */
+.profile-header {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.profile-header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Avatar/Logo Styles */
+.avatar, .company-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    animation: scaleIn 0.5s ease-out 0.2s both;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover, .company-logo:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Profile Info */
+.profile-info, .company-info {
+    flex: 1;
+    animation: fadeInRight 0.6s ease-out 0.3s both;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.profile-info h3, .company-info h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1a1a2e;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.profile-info p, .company-info p {
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+/* Badges and Tags */
+.availability span, .badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(16, 185, 129, 0.5);
+    }
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.stats div {
+    padding: 10px 20px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+.stats div:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 30px;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    animation: fadeInUp 0.6s ease-out 0.4s both;
+}
+
+.skills-section h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a2e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills-section span {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+    color: #4f46e5;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skills-section span:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+    color: white;
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+}
+
+/* Education & Experience */
+.education-section, .experience-section, .company-details {
+    margin-bottom: 30px;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    animation: fadeInUp 0.6s ease-out 0.5s both;
+    transition: all 0.3s ease;
+}
+
+.education-section:hover, .experience-section:hover, .company-details:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.education-section h4, .experience-section h4, .company-details h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a2e;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* AI Suggestions Box */
+.ai-suggestions {
+    padding: 30px;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    border-radius: 20px;
+    border-left: 6px solid #3b82f6;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+    animation: fadeInUp 0.6s ease-out 0.6s both;
+}
+
+.ai-suggestions h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1e40af;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ai-suggestions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ai-suggestions li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+    transition: all 0.3s ease;
+}
+
+.ai-suggestions li:last-child {
+    border-bottom: none;
+}
+
+.ai-suggestions li:hover {
+    padding-left: 10px;
+    color: #2563eb;
+}
+
+.ai-suggestions strong {
+    color: #1e40af;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    margin-bottom: 30px;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    animation: fadeInUp 0.6s ease-out 0.7s both;
+}
+
+.portfolio-section h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a2e;
+}
+
+/* Posted Projects */
+.posted-projects {
+    margin-bottom: 30px;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    animation: fadeInUp 0.6s ease-out 0.8s both;
+}
+
+.posted-projects h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a2e;
+}
+
+/* Rates Display */
+.rates {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.rates div {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border-radius: 12px;
+    border: 2px solid #10b981;
+    font-weight: 600;
+    color: #065f46;
+    transition: all 0.3s ease;
+}
+
+.rates div:hover {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #profile-section {
+        margin: 30px 15px;
+        padding: 20px 15px;
+    }
+    
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .avatar, .company-logo {
+        width: 120px;
+        height: 120px;
+        font-size: 36px;
+    }
+    
+    .profile-info h3, .company-info h3 {
+        font-size: 24px;
+    }
+    
+    .stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .rates {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Animation for Profile */
+.profile-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.profile-loading::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border: 5px solid #e0e7ff;
+    border-top-color: #4f46e5;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
