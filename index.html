@@ -7,20 +7,6 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    // Add authentication state check
-const [isAuthenticated, setIsAuthenticated] = useState(false);
-const [userRole, setUserRole] = useState(null); // 'freelancer' or 'client'
-
-// Only render profile section if user is logged in
-{isAuthenticated && (
-  <section id="profile-section">
-    <h2>Your Professional Profile</h2>
-    {/* Profile content */}
-  </section>
-)}
-// Conditional profile rendering based on role
-{isAuthenticated && userRole === 'freelancer' && <FreelancerProfile />}
-{isAuthenticated && userRole === 'client' && <ClientProfile />}
 
     <!-- Navigation -->
     <nav>
